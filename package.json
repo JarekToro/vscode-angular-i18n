@@ -1,0 +1,55 @@
+{
+    "name": "angular-i18n",
+    "displayName": "Angular-i18n",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "JarekToro",
+    "engines": {
+        "vscode": "^1.23.0"
+    },
+    "categories": [
+        "Other","Angular","i18n"
+
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "contributes": {
+		"commands": [
+			{
+				"command": "editor.calci18n",
+				"title": "Calculate i18n Ids"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "editor.calci18n"
+				}
+			]
+        },
+        "configuration": {
+        "type": "object",
+        "title": "i18n configuration",
+        "properties": {
+            "angular-i18n.src": {
+                "type": ["string"],
+                "default": "src/app/",
+                "description": "Specifies the folder path containing the angular files"
+            }
+        }
+    }
+	},
+    "main": "./extension",
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "eslint": "^4.11.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42",
+        "find-in-files": "^0.5.0"
+    }
+}
