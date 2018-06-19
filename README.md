@@ -4,7 +4,7 @@ This tool provides auto completion for @@i18nIds found throughout your angular p
 
 
 
-\!\[Demo\]\(images/demo.gif\)
+![Demo](images/demo.gif)
 
 
 ## Extension Settings
