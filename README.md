@@ -1,3 +1,5 @@
+![Angular i18n](images/icon.png)
+
 # Angular i18n
 
 This tool provides auto completion for @@i18nIds found throughout your angular project. It also provides a short hand for adding i18n= and i18n-attribute=
