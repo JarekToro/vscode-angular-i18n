@@ -3,14 +3,28 @@
     "displayName": "Angular-i18n",
     "description": "",
     "version": "0.0.1",
-    "publisher": "JarekToro",
+    "publisher": "jarek-toro",
+    "license": "SEE LICENSE IN LICENSE.txt",
+    "icon": "images/icon.png",
+    "description": "This tool provides auto completion for @@i18nIds found throughout your angular project. It also provides a short hand for adding i18n= and i18n-attribute=",
+    "keywords": [
+		"angular",
+		"i18n"
+	],
+    "galleryBanner": {
+		"color": "#dd0330",
+		"theme": "dark"
+	},
     "engines": {
         "vscode": "^1.23.0"
     },
     "categories": [
-        "Other","Angular","i18n"
-
+        "Other","Snippets"
     ],
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/JarekToro/vscode-angular-i18n"
+	},
     "activationEvents": [
         "*"
     ],
