@@ -85,7 +85,7 @@ function getAlli18nIds(callback) {
     let src = vscode.workspace.getConfiguration("angular-i18n").src;
 
     findInFiles
-        .find("@@[A-Z,a-z,0-9]+", vscode.workspace.rootPath + "/" + src, ".html$")
+        .find("@@[A-Z,a-z,0-9_]+", vscode.workspace.rootPath + "/" + src, ".html$")
         .then(function (results) {
             let allKeys = [];
             let map = {};
